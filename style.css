@@ -189,13 +189,13 @@ section {
   text-align: center;
 }
 
-.section__text__p2 {
+.job {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -294,13 +294,11 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
   flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 1rem;
 }
 
 .section-container {
@@ -344,13 +342,22 @@ section {
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 article .icon {
-  cursor: default;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  margin-left: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+article div {
+  display: flex;
+  flex-direction: column;
 }
 
 /* PROJECTS SECTION */
@@ -428,5 +435,17 @@ footer {
 }
 
 footer p {
+  text-align: center;
+}
+.fade {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+#skills-sub-title project-title {
   text-align: center;
 }
