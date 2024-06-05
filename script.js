@@ -6,7 +6,7 @@ function toggleMenu() {
   }
 
 function changeText() {
-    const titles = ["AI Engineer", "ML Engineer","Deep Learning Specialist", "CV Engineer", "NLP Engineer", "Software Engineer"];
+    const titles = ["ML Engineer", "NLP Engineer", "Software Engineer", "CV Engineer"];
     const randomIndex = Math.floor(Math.random() * titles.length);
     const jobelement = document.getElementById("job");
     jobelement.classList.add("fade-out");

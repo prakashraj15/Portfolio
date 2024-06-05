@@ -8,7 +8,9 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  background-color: #f8f8f8;
+  color: #333333;
+  font-family: 'Arial', sans-serif;
 }
 
 html {
@@ -358,6 +360,10 @@ article .icon {
 article div {
   display: flex;
   flex-direction: column;
+  
+}
+article div h3 {
+  margin: 0.25rem;
 }
 
 /* PROJECTS SECTION */
@@ -448,4 +454,16 @@ footer p {
 
 #skills-sub-title project-title {
   text-align: center;
+}
+
+h1, h2, h3 {
+  color: #333333;
+}
+
+h2{
+  text-align: center;
+}
+
+p {
+  color: #666666;
 }
