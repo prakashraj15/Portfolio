@@ -336,35 +336,24 @@ section {
 .article-container {
   display: flex;
   text-align: initial;
-  flex-wrap: wrap;
+  flex-wrap: wrap; ;
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
 }
 
-article {
+article{
   display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
+  width : 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
 }
 
-article .icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 0.5rem;
-  margin-left: 1rem;
-  display: inline-block;
-  vertical-align: middle;
+article.icon{
+  cursor: default
 }
 
-article div {
-  display: flex;
-  flex-direction: column;
-  
-}
-article div h3 {
-  margin: 0.25rem;
-}
+
 
 /* PROJECTS SECTION */
 
@@ -456,14 +445,3 @@ footer p {
   text-align: center;
 }
 
-h1, h2, h3 {
-  color: #333333;
-}
-
-h2{
-  text-align: center;
-}
-
-p {
-  color: #666666;
-}
