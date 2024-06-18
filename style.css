@@ -444,3 +444,53 @@ footer p {
   text-align: center;
 }
 
+/* education logo*/
+
+.edu-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.usc-div, .anna-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.usc-logo, .anna-logo {
+  width: 100%; /* Make the logo div take full width of parent */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  position: relative;
+}
+
+.edu-logo {
+  max-width: 100%; /* Ensure the image does not exceed the parent width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image */
+  display: block;
+}
+
+.usc-details, .anna-details {
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  .edu-div {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  .usc-div, .anna-div {
+      width: 45%;
+  }
+}
+
