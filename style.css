@@ -501,3 +501,177 @@ footer p {
   color: rgb(255, 0, 0);
 }
 
+/* Expereince section */
+.swiper-container-wrapper--timeline .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  min-height: 300px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.swiper-container-wrapper--timeline .swiper-slide .container {
+  padding: 0;
+  width: 100%;
+}
+
+.swiper-container-wrapper--timeline .swiper-slide .title {
+  font-size: 18px;
+  opacity: 0;
+  transition: 0.5s ease 0.5s;
+}
+
+.swiper-container-wrapper--timeline .swiper-slide.swiper-slide-active .title {
+  opacity: 1;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-progressbar {
+  position: relative;
+  margin-bottom: 70px;
+  background-color: transparent;
+  height: 4px;
+  border-bottom: 1px solid var(--secondary-color);
+  width: 75%;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-progressbar-fill {
+  background-color: var(--primary-color);
+  height: 3px;
+  top: 2px;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-progressbar:before {
+  position: absolute;
+  top: 2px;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+  content: "";
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-progressbar:after {
+  position: absolute;
+  top: 3px;
+  right: -100%;
+  width: 100%;
+  height: 1px;
+  background-color: var(--secondary-color);
+  content: "";
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom {
+  position: relative;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  line-height: 1.66;
+  bottom: 0;
+  z-index: 11;
+  width: 75%;
+  display: flex;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch .switch-title {
+  position: absolute;
+  font-weight: 400;
+  right: 0;
+  transform: translateX(50%);
+  transition: 0.2s all ease-in-out;
+  transition-delay: 0s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch .switch-title:after {
+  position: absolute;
+  top: calc(100% + 19px);
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: var(--primary-color);
+  border-radius: 2rem;
+  content: "";
+  transition: 0.2s all ease-in-out;
+  transition-delay: 0s;
+  z-index: 1;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active .switch-title {
+  font-weight: 400;
+  transition-delay: 0.4s;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active .switch-title:after {
+  background: var(--primary-color);
+  width: 25px;
+  height: 25px;
+  transition-delay: 0.4s;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active ~ .swiper-pagination-switch .switch-title {
+  color: var(--secondary-color);
+  font-weight: 16px;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active ~ .swiper-pagination-switch .switch-title:after {
+  background: var(--secondary-color);
+}
+
+/* Achievements section */
+
+#achievements {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px; /* Adds space between the title and the next div */
+}
+
+.achievements-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adds space between the image and the text */
+  margin-bottom: 20px; /* Adds space between the container and the next section */
+}
+
+.achievements__image-container {
+  flex: 0 0 600px;
+  max-width: 600px;
+}
+
+.achievement-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover; /* Ensure image covers the container */
+  border-radius: 10px; /* Optional: add some border radius for aesthetics */
+}
+
+.achievements__text-container {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.achievement-description {
+  margin: 0; /* Remove default margin for better control */
+  line-height: 1.6; /* Improve readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure the text container takes the full height of its parent */
+}
+
