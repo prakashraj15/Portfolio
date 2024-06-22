@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -15,6 +17,9 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#Experiences">Experiences</a></li>
+          <li><a href="#achievement">Achievement</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -31,6 +36,9 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#Education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#Experiences" onclick="toggleMenu()">Experiences</a></li>
+          <li><a href="#Achievement" onclick="toggleMenu()">Achievement</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -271,9 +279,116 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='./#Education'"
       />
     </section>
+    <section id="Education">
+      <p class="section__text__p1">My</p>
+      <h1 class="title">Academics</h1>
+      <div class = "edu-div">
+        <div class = "usc-div">
+          <div class = "usc-logo">
+            <a href = "https://www.usc.edu/">
+              <img src = "./assets/usc_logo.png" alt = "USC logo" class = "edu-logo" >
+            </a>
+          </div>
+          <div class = "usc-details">
+            <h2 class = "edu-title">University of Southern California</h2>
+            <p class = "edu-subtitle">M.S. Computer Science (AI)</p>
+            <p class = "edu-year">2023 - 2025</p>
+          </div>
+        </div>
+        <div class = "anna-div">
+          <div class = "anna-logo">
+            <a href = "https://srmeaswari.ac.in/">
+              <img src = "./assets/eec_logo.png" alt = "Anna University logo" class = "edu-logo">
+            </a>    
+          </div>
+          <div class = "anna-details">
+            <h2 class = "edu-title">SRM Easwari Engineering College</h2>
+            <p class = "edu-subtitle">B.E. Computer Science</p>
+            <p class = "edu-year">2019 - 2023</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Experience'"
+      />
+    </section>
+    <section id="Experiences">
+      <p class="section__text__p1">My career</p>
+      <h1 class = "title">Overview</h1>
+      <div class="container">
+        <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
+            <!-- Timeline -->
+            <ul class="swiper-pagination-custom">
+                <li class="swiper-pagination-switch first active"><span class="switch-title">B.E.</span></li>
+                <li class="swiper-pagination-switch"><span class="switch-title">#E</span></li>
+                <li class="swiper-pagination-switch"><span class="switch-title">#1</span></li>
+                <li class="swiper-pagination-switch last"><span class="switch-title">#2</span></li>
+                <li class="swiper-pagination-switch"><span class="switch-title">SIH</span></li>
+                <li class="swiper-pagination-switch"><span class="switch-title">M.S.</span></li>
+                <li class="swiper-pagination-switch"><span class="switch-title">#3</span></li>
+            </ul>
+            <!-- Progressbar -->
+            <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
+            <!-- Swiper -->
+            <div class="swiper swiper-container swiper-container--timeline">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><span class="title"><b>Bachelor of Engineering (Aug 2019 - May 2023)</b><br>
+                        The place where I started my passion for computers and Artificial Intelligence. The core concepts that I learned during my undergrad were <b>Data structures, Linear Algebra, Calculus, Probability, 
+                        Statistics, Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Web Development, Mobile Development, Cloud Computing, Cyber Security, Data Science, Data Analytics, Service-Oriented Architecture,
+                        Operating Systems, Compiler Design, HCI</b>. I also learned fine soft skills like presentation, teamwork, and leadership qualities.</span></div>
+                    <div class="swiper-slide"><span class="title"><b>Online Courses (2020 - Present)</b><br>
+                        Online courses are a significant source of knowledge for me. During the pandemic, I maximized my learning by completing several reputable online courses from esteemed institutions worldwide. Notable courses include <b>Web Development by Duke University, 
+                        Data Analytics by CU Boulder, and Programming in Java by IIT Kharagpur.</b> Additionally, I took several courses on Udemy to gain further insights into Machine Learning and Data Science.</span></div>
+                    <div class="swiper-slide"><span class="title"><b>Coding Zen (Jun - Aug 2021)</b><br>
+                        It was my first internship where I learned some important industry skills like <b>Git</b> and <b>Jira</b>. At Coding Zen, I was assigned the role of a Machine Learning Engineer, where I developed end-to-end applications. I developed an AI-integrated application for kindergarten students, utilizing computer vision and natural language processing to create an interactive digital assistant capable of vision and speech. I gained practical skills in integration, infrastructure management, and implementation during the development of real-world projects.<br>
+                        Skills: <b>Python, Pytorch, CNN, Speech Recognition, Git, Jira.</b></span></div>
+                    <div class="swiper-slide"><span class="title"><b>IBM iX (Aug - Nov 2022)</b><br>
+                        IBM Apprenticeship was a milestone in my budding career, where I worked as a Data Scientist. I collaborated with the marketing team to analyze a dataset of user reviews on the UI/UX of IBM iX products. The survey involved one hundred thousand participants and twenty different UI/UX designs. I utilized <b>Python</b> for statistical analysis and <b>Power BI</b> for data visualization, uncovering insights to inform future business strategies. I developed a recommendation model using <b>Random Forest</b> to suggest optimal UI/UX designs for clients based on specific use cases and deployed the solution efficiently on <b>microsoft Azure</b>.<br>
+                        Skills: <b>Python, Power BI, Statistics, ML Algorithms , Azure.</b></span></div>
+                    <div class="swiper-slide"><span class="title"><b>SIH (Aug 2022)</b><br>
+                        Smart India Hackathon is one of the greatest achievements in my educational career. My team and I won the Inspiration Award from the Government of India. We developed a desktop application for the Water Ministry. Refer to the Achievements section for more information.</span></div>
+                    <div class="swiper-slide"><span class="title"><b>Master of Science in Computer Science (Aug 2023 - Present)</b><br>
+                        I am currently pursuing my Master of Science in Computer Science at one of my dream universities, the <b>University of Southern California</b>. This is the first time I have moved from my home country, and it has been a wonderful experience. Here, I am learning <b>advanced machine learning,natural language processing, deep learning, analysis of algorithms, and more.</b></span></div>
+                    <div class="swiper-slide"><span class="title"><b>Radical AI (May 2024 - Present)</b><br>
+                        I recently joined Radical AI as an AI Engineer, where we are building a Gen AI web application using <b>React.js</b> and <b>Python</b> to address user queries from YouTube videos. I am developing an ML pipeline to extract and process YouTube video content using <b>Langchain</b>, transforming it into vector embeddings with advanced text embedding models. I am also implementing a RAG system by applying similarity search on vector embeddings using user prompts, then refining responses via the <b>GPT model</b>.<br>
+                        Skills:<b> Google Cloud Platform, React.js, Python, Langchain, GPT model, RAG, Gen AI.</b></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <section id="achievement">
+      <p class="section__text__p1">My Notable</p>
+      <h1 class="title">Achievement</h1>
+      <div class="achievements-container">
+        <div class="achievements__image-container">
+          <img
+            src="./assets/ach1.jpg"
+            alt="Achievement 1"
+            class="achievement-image"
+            id="currentAchievementImage"
+          />
+        </div>
+        <div class="achievements__text-container">
+          <p class="text-container">
+            My team and I were shortlisted for the SIH finale, where we developed a desktop application for the <b>Ministry of Jal</b> (Central Water Department, Government of India). 
+            Our application uses <b>Python</b> for the backend and </b>Electron.js<b> for the frontend, leveraging HTML, CSS, and JavaScript to create an interactive interface. We also developed a 
+            <b>custom library for plotting various types of graphs</b> to meet user requirements. Competing initially against 60 teams, we were among the five selected for the final round in our problem statement. 
+            Our innovative use of cutting-edge technologies for enterprise-level desktop applications earned us the <b>Inspirational Award</b>
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -352,7 +467,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">prakashrajnehrudass@gmail.com</a></p>
+          <p><a href="mailto:prakashrajnehrudass@gmail.com">prakashrajnehrudass@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -370,8 +485,8 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#Experiences">Experiences</a></li>
+            <li><a href="#achievement">Achievement</a></li>
           </ul>
         </div>
       </nav>
