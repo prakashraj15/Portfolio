@@ -675,3 +675,69 @@ footer p {
     width: 100%;
   }
 }
+/*achivevement section*/
+#achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.achievements-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.achievements__image-container {
+  flex: 0 0 auto;
+  width: 4in;
+  height: 4in;
+}
+
+.achievement-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.achievements__text-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.text-container {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .achievements-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .achievements__image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .achievements__text-container {
+    max-width: 100%;
+  }
+}
