@@ -6,14 +6,14 @@ function toggleMenu() {
 }
 
 function changeText() {
-  const titles = ["ML Engineer", "NLP Engineer", "Software Engineer", "CV Engineer", "Data Scientist"];
+  const titles = [ "Software Engineer", "Data Scientist"];
   const randomIndex = Math.floor(Math.random() * titles.length);
   const jobelement = document.getElementById("job");
   jobelement.classList.add("fade-out");
   setTimeout(() => {
     jobelement.innerHTML = titles[randomIndex];
     jobelement.classList.remove("fade-out");
-  }, 500);
+  }, 1000);
 }
 
 setInterval(changeText, 3000);
