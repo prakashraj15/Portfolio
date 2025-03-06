@@ -5,14 +5,15 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+let index = 0;
 function changeText() {
-  const titles = [ "Software Engineer", "Data Scientist"];
-  const randomIndex = Math.floor(Math.random() * titles.length);
+  const titles = [ "Software Engineer", "AI Engineer"];
   const jobelement = document.getElementById("job");
   jobelement.classList.add("fade-out");
   setTimeout(() => {
-    jobelement.innerHTML = titles[randomIndex];
+    jobelement.innerHTML = titles[index];
     jobelement.classList.remove("fade-out");
+    index = (index + 1) % titles.length;
   }, 1000);
 }
 
@@ -65,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
         switchElem.classList.remove('active');
       }
     });
+    console.log(swiper.activeIndex);
   }
 
   updateMainPagination(mainSwiper);
